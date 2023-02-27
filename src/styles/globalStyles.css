@@ -1,0 +1,25 @@
+:root {
+  --purple-300: #8615df;
+  --purple-500: #570e91;
+  --purple-700: #38085c;
+  --purple-900: #190429;
+  --white-500: #FEFEFE;
+  --white-500: #FEFEFE;
+  --white-600: #F5F5F5;
+  --white-700: #F6F6F7;
+  --color-title: #0e0e0f;
+  --color-text: #666665;
+  --color-placeholder: #9e9ea7;
+  --color-error: #df1545;
+  --color-sucess: #168821;
+}
+
+body, input, button, textarea, input, input::placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

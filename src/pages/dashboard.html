@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <div>
+          <img src="../assets/icons/header-icon.svg" alt="Do it" />
+          <h1>Dashboard</h1>
+        </div>
+        <div>
+          <button type="button">
+            <img src="../assets/icons/grid-menu-icon.svg" alt="Ações" />
+          </button>
+          <div style="display: none"></div>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <div>
+        <input
+          type="text"
+          id="searchValue"
+          placeholder="Pesquisar por tarefa"
+        />
+        <button id="searchTasks">
+          <img
+            src="../assets/icons/search-icon.svg"
+            alt="Pesquisar"
+            class="search__task--icon"
+          />
+        </button>
+      </div>
+      <button>Adicionar nova tarefa</button>
+    </div>
+
+    <div>
+      <ul></ul>
+    </div>
+
+    <dialog>
+      <div>
+        <div>
+          <img src="../assets/icons/file-icon.svg" alt="Icone" />
+          <p>Adicionar</p>
+        </div>
+        <div>
+          <button>
+            <img src="../assets/icons/close-icon.svg" alt="Fechar modal" />
+          </button>
+        </div>
+      </div>
+      <div>
+        <form>
+          <label for="#taskTitle">Título</label>
+          <input
+            id="taskTitle"
+            type="text"
+            name="title"
+            placeholder="Digite seu título"
+          />
+
+          <label for="#taskDescription">Descrição:</label>
+          <textarea
+            name="description"
+            id="taskDescription"
+            cols="30"
+            rows="3"
+            placeholder="Digite sua descrição"
+          ></textarea>
+
+          <button type="submit">Adicionar Tarefa</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script type="module" src="../scripts/dashboard.js"></script>
+  </body>
+</html>
