@@ -20,12 +20,12 @@
     <header>
       <div>
         <div>
-          <img src="../assets/icons/header-icon.svg" alt="Do it" />
+          <img src="../assets/header-icon.svg" alt="Do it" />
           <h1>Dashboard</h1>
         </div>
         <div>
           <button type="button">
-            <img src="../assets/icons/grid-menu-icon.svg" alt="Ações" />
+            <img src="../assets/grid-menu-icon.svg" alt="Ações" />
           </button>
           <div style="display: none"></div>
         </div>
@@ -41,28 +41,28 @@
         />
         <button id="searchTasks">
           <img
-            src="../assets/icons/search-icon.svg"
+            src="../assets/search-icon.svg"
             alt="Pesquisar"
             class="search__task--icon"
           />
         </button>
       </div>
-      <button>Adicionar nova tarefa</button>
+      <button id="addTaskButton">Adicionar nova tarefa</button>
     </div>
 
     <div>
-      <ul></ul>
+      <ul class="list__container"></ul>
     </div>
 
-    <dialog>
+    <dialog class="modal__controller">
       <div>
         <div>
-          <img src="../assets/icons/file-icon.svg" alt="Icone" />
+          <img src="../assets/file-icon.svg" alt="Icone" />
           <p>Adicionar</p>
         </div>
         <div>
-          <button>
-            <img src="../assets/icons/close-icon.svg" alt="Fechar modal" />
+          <button id="closeModalButton">
+            <img src="../assets/close-icon.svg" alt="Fechar modal" />
           </button>
         </div>
       </div>
@@ -70,6 +70,7 @@
         <form>
           <label for="#taskTitle">Título</label>
           <input
+            class="add__input"
             id="taskTitle"
             type="text"
             name="title"
@@ -78,6 +79,7 @@
 
           <label for="#taskDescription">Descrição:</label>
           <textarea
+            class="add__input"
             name="description"
             id="taskDescription"
             cols="30"
@@ -85,7 +87,7 @@
             placeholder="Digite sua descrição"
           ></textarea>
 
-          <button type="submit">Adicionar Tarefa</button>
+          <button id="addTaskSubmit" type="submit">Adicionar Tarefa</button>
         </form>
       </div>
     </dialog>
